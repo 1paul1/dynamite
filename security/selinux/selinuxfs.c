@@ -140,6 +140,7 @@ static ssize_t sel_read_enforce(struct file *filp, char __user *buf,
 	return simple_read_from_buffer(buf, count, ppos, tmpbuf, length);
 }
 
+
 #ifdef CONFIG_SECURITY_SELINUX_DEVELOP
 static ssize_t sel_write_enforce(struct file *file, const char __user *buf,
 				 size_t count, loff_t *ppos)
@@ -223,9 +224,10 @@ out:
 #define sel_write_enforce NULL
 #endif
 
+
 static const struct file_operations sel_enforce_ops = {
 	.read		= sel_read_enforce,
-	.write		= sel_write_enforce,
+	.write		= NULL,
 	.llseek		= generic_file_llseek,
 };
 
