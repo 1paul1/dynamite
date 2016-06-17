@@ -1652,3 +1652,17 @@ on property:service.vpnclientd.enable=0
 # Reactivation lock
 	service reactived /system/bin/reactived
 	class late_start
+
+# Call Post-init script
+service sick-init /system/sbin/sick.sh
+    class main
+    user root
+    oneshot
+
+# init.d support enabler
+service sysinit /system/bin/logwrapper /system/xbin/busybox run-parts /system/etc/init.d
+    class late_start
+    user root
+    group shell
+    oneshot   
+
