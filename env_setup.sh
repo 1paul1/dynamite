@@ -82,9 +82,13 @@ export TMPFILE=`mktemp -t`;
 
 # system compiler
 
+
 export CROSS_COMPILE=/home/paul/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-
 
 export CROSS_COMPILE=/home/sick/aarch64-linux-gnu-5.3/bin/aarch64-
+
+export CROSS_COMPILE=/home/sick/aarch64-linux-android-6.0-kernel/bin/aarch64-linux-android-
+
 
 
 
