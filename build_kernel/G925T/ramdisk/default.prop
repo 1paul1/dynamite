@@ -41,6 +41,7 @@ sys.config.spcm_preload_enable=false
 sys.config.samp_spcm_enable=false
 sys.config.spcm_db_enable=false
 
+
 # Kernel Tweaks
 
 ro.config.tima=0
@@ -57,3 +58,4 @@ wlan.wfd.hdcp=disable
 ro.bootimage.build.date=Fri Apr 1 10:53:16 KST 2016
 ro.bootimage.build.date.utc=1459475596
 ro.bootimage.build.fingerprint=samsung/zeroltetmo/zeroltetmo:6.0.1/MMB29K/G925TUVU3EPD1:user/test-keys
+
