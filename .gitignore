@@ -71,6 +71,7 @@ GPATH
 GRTAGS
 GSYMS
 GTAGS
+fips_fmp_utils
 *.orig
 *~
 \#*#
