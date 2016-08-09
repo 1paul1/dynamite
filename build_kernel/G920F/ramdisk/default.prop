@@ -43,7 +43,8 @@ sys.config.samp_spcm_enable=false
 sys.config.spcm_db_enable=false
 
 # Kernel Tweaks
-
+persist.security.ams.enforcing=0
+persist.cne.feature=0
 ro.config.tima=0
 ro.config.knox=0
 androidboot.selinux=0
